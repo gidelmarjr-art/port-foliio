@@ -1,0 +1,52 @@
+.backdrop {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.backdrop__blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  animation: blob-float 16s var(--ease-in-out) infinite;
+}
+
+.backdrop__blob--a {
+  width: 46vw;
+  height: 46vw;
+  top: -12%;
+  right: -8%;
+  background: radial-gradient(circle, var(--flare) 0%, transparent 70%);
+}
+
+.backdrop__blob--b {
+  width: 36vw;
+  height: 36vw;
+  bottom: -14%;
+  left: -6%;
+  background: radial-gradient(circle, var(--paper-dim) 0%, transparent 72%);
+  opacity: 0.14;
+  animation-duration: 20s;
+  animation-delay: -6s;
+}
+
+.backdrop__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.22;
+  mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 75%);
+}
+
+:root[data-theme="light"] .backdrop__blob--a {
+  opacity: 0.2;
+}
+
+:root[data-theme="light"] .backdrop__blob--b {
+  opacity: 0.08;
+}

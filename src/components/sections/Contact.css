@@ -1,0 +1,116 @@
+.contact {
+  padding-block: 0 0;
+}
+
+.contact__intro {
+  padding-block: clamp(56px, 9vw, 100px) 60px;
+  max-width: 720px;
+  text-align: left;
+}
+
+.contact__lead {
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 52ch;
+  margin-bottom: 34px;
+}
+
+.contact__rows {
+  border-top: 1px solid var(--line);
+  padding-bottom: clamp(56px, 9vw, 96px);
+}
+
+.contact-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1.4fr 1fr 24px;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 20px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--paper);
+  overflow: hidden;
+  transition: padding-left var(--dur-med) var(--ease-out);
+}
+
+.contact-row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ink-2);
+  transform: translateX(-100%);
+  transition: transform var(--dur-med) var(--ease-out);
+  z-index: 0;
+}
+
+.contact-row:hover::before {
+  transform: translateX(0);
+}
+
+.contact-row:hover {
+  padding-left: 32px;
+}
+
+.contact-row__icon,
+.contact-row__main,
+.contact-row__handle,
+.contact-row__arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-row__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  color: var(--paper);
+}
+
+.contact-row__main h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.contact-row__main p {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.contact-row__handle {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+  text-align: right;
+  word-break: break-word;
+}
+
+.contact-row__arrow {
+  color: var(--flare);
+  transform: rotate(0deg);
+  transition: transform var(--dur-fast) var(--ease-out);
+  justify-self: end;
+}
+
+.contact-row:hover .contact-row__arrow {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 700px) {
+  .contact-row {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .contact-row__handle,
+  .contact-row__arrow {
+    display: none;
+  }
+}

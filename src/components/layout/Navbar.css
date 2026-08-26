@@ -1,0 +1,141 @@
+.navbar-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 22px;
+  transition: padding-top var(--dur-fast) var(--ease-out);
+}
+
+.navbar-wrap.is-scrolled {
+  padding-top: 14px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--paper);
+  flex-shrink: 0;
+}
+
+.navbar__logo span {
+  color: var(--flare);
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.lang-toggle button {
+  color: var(--muted);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.lang-toggle button.is-active {
+  color: var(--paper);
+}
+
+.lang-toggle__divider {
+  color: var(--line-strong);
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--muted);
+  transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+
+.icon-btn:hover {
+  color: var(--flare);
+  background-color: var(--flare-dim);
+}
+
+.menu-btn {
+  position: relative;
+  z-index: 106;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px 9px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--line-strong);
+  color: var(--paper);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+
+.menu-btn:hover {
+  border-color: var(--paper);
+}
+
+.menu-btn.is-open {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+
+.menu-btn__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 16px;
+}
+
+.menu-btn__bars span {
+  height: 1.5px;
+  background: currentColor;
+  transition: transform var(--dur-fast) var(--ease-out), width var(--dur-fast) var(--ease-out);
+}
+
+.menu-btn__bars span:last-child {
+  width: 70%;
+  align-self: flex-end;
+}
+
+.menu-btn.is-open .menu-btn__bars span {
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .lang-toggle {
+    display: none;
+  }
+
+  .menu-btn__label {
+    display: none;
+  }
+
+  .menu-btn {
+    padding: 10px;
+    border-radius: 50%;
+  }
+}

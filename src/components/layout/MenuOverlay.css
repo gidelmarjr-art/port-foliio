@@ -1,0 +1,111 @@
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 105;
+  background: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--edge);
+  clip-path: circle(2% at calc(100% - 44px) 44px);
+  transition: clip-path 0.7s var(--ease-in-out);
+  pointer-events: none;
+}
+
+.menu-overlay.is-open {
+  clip-path: circle(150% at calc(100% - 44px) 44px);
+  pointer-events: auto;
+}
+
+.menu-overlay__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.menu-overlay__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.menu-overlay__link {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 8vw, 84px);
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--muted-2);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+
+.menu-overlay.is-open .menu-overlay__link {
+  animation: fade-up 0.6s var(--ease-out) forwards;
+  animation-delay: calc(var(--i) * 0.06s + 0.25s);
+}
+
+.menu-overlay__link:hover {
+  color: var(--paper);
+  transform: translateX(14px);
+}
+
+.menu-overlay__link-index {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--flare);
+  letter-spacing: 0;
+}
+
+.menu-overlay__footer {
+  position: absolute;
+  bottom: 40px;
+  left: var(--edge);
+  right: var(--edge);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.menu-overlay__socials {
+  display: flex;
+  gap: 22px;
+}
+
+.menu-overlay__socials a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.menu-overlay__socials a:hover {
+  color: var(--paper);
+}
+
+.menu-overlay__note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+@media (max-width: 640px) {
+  .menu-overlay__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 28px;
+  }
+}
