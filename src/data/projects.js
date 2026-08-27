@@ -60,4 +60,15 @@ export const projects = [
       en: "Real-time global exchange rate dashboard with an AI analytics layer — built with a marketing landing page plus a functional dashboard.",
     },
   },
+  {
+    id: "anagiedry",
+    name: "AnaGiedry - Nutricionista",
+    image: anagiedry,
+    repo: "https://github.com/gidelmarjr-art/anagiedry-port",
+    tags: ["React", "Vite", "CSS"],
+    description: {
+      pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real atravéz de uma nutricionista formada em ensino superior.",
+      en: "Website for individualized nutritional care, guided by science and your real routine through a nutritionist graduated in higher education.",
+    },
+  },
 ];
