@@ -3,6 +3,7 @@ import codeplac from "../assets/img/codeplac.jpeg";
 import portifolio from "../assets/img/portifolio.png";
 import polypla from "../assets/img/polypla.png";
 import financeday from "../assets/img/financeday.png";
+import nutricionista from "../assets/img/nutricionista.png";
 
 export const projects = [
   {
@@ -50,6 +51,17 @@ export const projects = [
     },
   },
   {
+    id: "nutricionista",
+    name: "Ana Giedry - Nutricionista",
+    image: nutricionista,
+    repo: "https://github.com/gidelmarjr-art",
+    tags: ["React", "Vite", "CSS"],
+    description: {
+      pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real através de uma nutricionista formada em ensino superior.",
+      en: "Website for individualized nutritional care, guided by science and your real routine through a nutritionist graduated in higher education.",
+    },
+  },
+  {
     id: "financeday",
     name: "FinanceDay",
     image: financeday,
@@ -57,18 +69,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "Frankfurter API"],
     description: {
       pt: "Painel de câmbio global em tempo real com leitura analítica por IA — projeto construído com uma landing page de marketing e um dashboard funcional.",
-      en: "Real-time global exchange rate dashboard with an AI analytics layer — built with a marketing landing page plus a functional dashboard.",
-    },
-  },
-  {
-    id: "anagiedry",
-    name: "AnaGiedry - Nutricionista",
-    image: anagiedry,
-    repo: "https://github.com/gidelmarjr-art/anagiedry-port",
-    tags: ["React", "Vite", "CSS"],
-    description: {
-      pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real atravéz de uma nutricionista formada em ensino superior.",
-      en: "Website for individualized nutritional care, guided by science and your real routine through a nutritionist graduated in higher education.",
+      en: "Real-time global exchange rate dashboard with an AI analytics layer — built with a marketing landing page plus a functional dashboard."
     },
   },
 ];
