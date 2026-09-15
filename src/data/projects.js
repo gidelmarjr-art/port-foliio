@@ -6,6 +6,8 @@ import financeday from "../assets/img/financeday.png";
 import nutricionista from "../assets/img/nutricionista.png";
 import docurasdahavs from "../assets/img/docurasdahavs.png";
 import draraquel from "../assets/img/draraquel.png";
+import gbrazcontabilidade from "../assets/img/gbrazcontabilidade.png";
+import yummy from "../assets/img/yummy.png";
 
 export const projects = [
   {
@@ -94,6 +96,28 @@ export const projects = [
     description: {
       pt: "Landing page profissional desenvolvida para serviços de medicina de família e cuidados paliativos domiciliares, unindo competência técnica e escuta humana.",
       en: "Professional landing page developed for family medicine and home palliative care services, combining technical competence and human listening."
+    },
+  },
+  {
+    id: "gbrazcontabilidade",
+    name: "GBraz Contabilidade - Escritório Contábil",
+    image: gbrazcontabilidade,
+    repo: "https://github.com/gidelmarjr-art/gbraz-contabilidade",
+    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
+    description: {
+      pt: "Landing page profissional desenvolvida para serviços contábeis para diversas áreas, unindo competência técnica e escuta humana.",
+      en: "Professional landing page developed for various accounting services, combining technical competence and human listening."
+    },
+  },
+  {
+    id: "yummy",
+    name: "Yummy - Restaurante",
+    image: yummy,
+    repo: "https://github.com/gidelmarjr-art/yummy",
+    tags: ["React", "Python", "CSS", "JavaScript", "Vercel", "MySQL", "Render"],
+    description: {
+      pt: "Aplicação Web para restaurante, com landing page profissional desenvolvida para serviços como pedidos online, unindo competência técnica e escuta humana.",
+      en: "Web application for restaurants, with a professional landing page developed for services such as online ordering, combining technical competence and human listening."
     },
   },
 ];
