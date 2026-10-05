@@ -37,12 +37,14 @@
 .project-card__image-wrap {
   position: absolute;
   inset: 0;
+  background-color: #0b0b0b; /* Padroniza o fundo caso alguma imagem tenha bordas brancas/transparentes */
 }
 
 .project-card__image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center; /* Garante que o topo dos prints apareça de forma uniforme */
   filter: grayscale(0.55) contrast(1.05);
   transform: scale(1.02);
   transition: transform 0.7s var(--ease-out), filter 0.5s var(--ease-out);

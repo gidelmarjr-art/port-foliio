@@ -8,6 +8,7 @@ import docurasdahavs from "../assets/img/docurasdahavs.png";
 import draraquel from "../assets/img/draraquel.png";
 import gbrazcontabilidade from "../assets/img/gbrazcontabilidade.png";
 import yummy from "../assets/img/yummy.png";
+import minhasFinancias from "../assets/img/minhas-financias.png"; // ✅ Corrigido o nome da variável (sem hífen)
 
 export const projects = [
   {
@@ -37,7 +38,7 @@ export const projects = [
     name: "Portfólio",
     image: portifolio,
     repo: "https://github.com/gidelmarjr-art/port-foliio",
-    tags: ["React", "JavaScript", "CSS", "React", "Vercel"],
+    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
     description: {
       pt: "Este site: estrutura em React com componentes reutilizáveis, sistema de temas e i18n, e animações inspiradas em blueprints técnicos.",
       en: "This very site: a React structure with reusable components, a theme + i18n system, and animations inspired by technical blueprints.",
@@ -48,7 +49,7 @@ export const projects = [
     name: "Polypla",
     image: polypla,
     repo: "https://github.com/gidelmarjr-art/polyypla-as",
-    tags: ["React", "JavaScript", "CSS", "React", "Vercel"],
+    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
     description: {
       pt: "Aplicação web de gerenciamento de tarefas e projetos com suporte a quadros interativos, organização de fluxo de trabalho e controle de status em tempo real.",
       en: "Task and project management web app with interactive boards, workflow organization and real-time status tracking.",
@@ -120,4 +121,15 @@ export const projects = [
       en: "Web application for restaurants, with a professional landing page developed for services such as online ordering, combining technical competence and human listening."
     },
   },
+  {
+    id: "minhas-financias",
+    name: "Minhas Finanças",
+    image: minhasFinancias, // ✅ Atualizado para usar a variável correta
+    repo: "https://github.com/gidelmarjr-art/minhas-financias",
+    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel", "Supabase", "PostgreSQL"],
+    description: {
+      pt: "Painel de controle financeiro pessoal com visualização de gastos e receitas, desenvolvido com tecnologias modernas.",
+      en: "Personal financial dashboard with expense and income visualization, built with modern technologies."
+    }
+  }
 ];

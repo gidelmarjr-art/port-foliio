@@ -4,6 +4,14 @@
 > 
 ---
 
+## 📸 Demonstração do Projeto
+
+<div align="center">
+  <img src="public/port-foliio.png" alt="FinanceDay Dashboard Preview" width="100%" />
+</div>
+
+---
+
 ## 🚀 Sobre o Projeto
 O **G.JR Portfólio** é a aplicação web de apresentação pessoal e profissional desenvolvida para destacar competências em engenharia de software, arquitetura de sistemas e segurança. O projeto conta com um design moderno em dark mode com detalhes em vermelho/laranja de alto impacto visual, suporte a múltiplos idiomas (PT/EN), alternância de tema e seções imersivas para exibição de projetos.
 
