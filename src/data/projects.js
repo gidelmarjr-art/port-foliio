@@ -8,7 +8,7 @@ import docurasdahavs from "../assets/img/docurasdahavs.png";
 import draraquel from "../assets/img/draraquel.png";
 import gbrazcontabilidade from "../assets/img/gbrazcontabilidade.png";
 import yummy from "../assets/img/yummy.png";
-import minhasFinancias from "../assets/img/minhas-financias.png"; // ✅ Corrigido o nome da variável (sem hífen)
+import minhasFinancias from "../assets/img/minhas-financias.png";
 
 export const projects = [
   {
