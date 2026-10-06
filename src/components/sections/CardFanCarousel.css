@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   height: clamp(380px, 42vw, 520px);
-  overflow: clip;
+  overflow: visible;
   isolation: isolate;
 }
 
@@ -15,7 +15,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: clamp(310px, 40vw, 520px);
+  width: clamp(310px, 40vw, 620px);
   aspect-ratio: 16 / 10;
   margin: 0;
   transform: translate(-50%, -50%);

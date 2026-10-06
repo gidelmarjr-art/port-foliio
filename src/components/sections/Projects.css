@@ -8,6 +8,7 @@
 }
 
 .projects__carousel {
-  width: min(100%, 1120px);
-  margin-inline: auto;
+  width: calc(100vw - 48px);
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
