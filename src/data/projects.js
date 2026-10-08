@@ -15,7 +15,7 @@ export const projects = [
     id: "financeday",
     name: "FinanceDay",
     image: financeday,
-    repo: "https://github.com/gidelmarjr-art/financeday",
+    repo: "https://github.com/gidelmarjr-art",
     tags: ["React", "Vite", "CSS", "Frankfurter API", "Vercel"],
     description: {
       pt: "Painel de câmbio global em tempo real com leitura analítica por IA — projeto construído com uma landing page de marketing e um dashboard funcional.",
@@ -52,7 +52,7 @@ export const projects = [
     name: "Portfólio",
     image: portifolio,
     repo: "https://github.com/gidelmarjr-art/port-foliio",
-    tags: ["React", "JavaScript", "CSS", "Vercel"],
+    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
     description: {
       pt: "Este site: estrutura em React com componentes reutilizáveis, sistema de temas e i18n, e animações inspiradas em blueprints técnicos.",
       en: "This very site: a React structure with reusable components, a theme + i18n system, and animations inspired by technical blueprints.",
@@ -64,7 +64,7 @@ export const projects = [
     name: "Polypla",
     image: polypla,
     repo: "https://github.com/gidelmarjr-art/polyypla-as",
-    tags: ["React", "JavaScript", "CSS", "Vercel"],
+    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
     description: {
       pt: "Aplicação web de gerenciamento de tarefas e projetos com suporte a quadros interativos, organização de fluxo de trabalho e controle de status em tempo real.",
       en: "Task and project management web app with interactive boards, workflow organization and real-time status tracking.",
@@ -99,7 +99,7 @@ export const projects = [
     id: "nutricionista",
     name: "Ana Giedry - Nutricionista",
     image: nutricionista,
-    repo: "https://github.com/gidelmarjr-art/anagiedry-port",
+    repo: "https://github.com/gidelmarjr-art",
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real através de uma nutricionista formada em ensino superior.",

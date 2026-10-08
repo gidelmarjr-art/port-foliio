@@ -1,5 +1,9 @@
 import { useEffect, useRef } from "react";
 
+/**
+ * Aplica a classe "is-visible" a um elemento quando ele entra na viewport.
+ * Usado para as animações de revelação nas seções do "blueprint".
+ */
 export function useScrollReveal(options = {}) {
   const ref = useRef(null);
 
