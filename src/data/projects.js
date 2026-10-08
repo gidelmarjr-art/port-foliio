@@ -99,7 +99,7 @@ export const projects = [
     id: "nutricionista",
     name: "Ana Giedry - Nutricionista",
     image: nutricionista,
-    repo: "https://anagiedry-port.vercel.app/",
+    repo: "https://github.com/gidelmarjr-art/anagiedry-port",
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real através de uma nutricionista formada em ensino superior.",
