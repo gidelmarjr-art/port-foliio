@@ -15,7 +15,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: clamp(310px, 40vw, 620px);
+  width: clamp(190px, 40vw, 620px);
   aspect-ratio: 16 / 10;
   margin: 0;
   transform: translate(-50%, -50%);
@@ -27,12 +27,15 @@
   color: var(--paper);
   text-decoration: none;
   will-change: transform, opacity;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-med) var(--ease-out);
 }
 
 .fan-carousel__card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.6s var(--ease-out), filter var(--dur-fast) var(--ease-out);
 }
 
 .fan-carousel__card::after {
@@ -40,6 +43,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(transparent 42%, rgba(0, 0, 0, 0.8));
+  transition: background var(--dur-fast) var(--ease-out);
 }
 
 .fan-carousel__card span {
@@ -50,16 +54,52 @@
   z-index: 1;
   overflow: hidden;
   font-family: var(--font-display);
-  font-size: clamp(14px, 1.8vw, 18px);
+  font-size: clamp(13px, 1.8vw, 18px);
   font-weight: 700;
   line-height: 1.2;
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
+  padding-right: 34px;
+}
+
+.fan-carousel__card span::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--flare);
+  color: var(--ink);
+  font-size: 13px;
+  opacity: 0;
+  transform: translateY(-50%) translateX(-6px) rotate(-45deg);
+  transition: opacity var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
 }
 
 .fan-carousel__card:hover {
   border-color: var(--flare);
+  box-shadow: 0 30px 60px -18px var(--shadow), 0 0 0 1px var(--flare-dim);
+  z-index: 20 !important;
+}
+
+.fan-carousel__card:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.04);
+}
+
+.fan-carousel__card:hover::after {
+  background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.9));
+}
+
+.fan-carousel__card:hover span::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0) rotate(0deg);
 }
 
 .fan-carousel__controls {
@@ -95,12 +135,26 @@
 
 @media (max-width: 640px) {
   .fan-carousel__stage {
-    height: 285px;
+    height: 240px;
   }
-  
+
   .fan-carousel__card span {
-    right: 12px;
-    bottom: 10px;
-    left: 12px;
+    right: 10px;
+    bottom: 9px;
+    left: 10px;
+    font-size: 12px;
+    padding-right: 26px;
+  }
+
+  .fan-carousel__card span::after {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fan-carousel__stage {
+    height: 205px;
   }
 }

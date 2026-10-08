@@ -18,10 +18,11 @@ function positionFor(total, slot) {
 }
 
 function viewportScale(width) {
-  if (width < 480) return 0.28;
-  if (width < 640) return 0.38;
-  if (width < 768) return 0.5;
-  if (width < 1024) return 0.75;
+  if (width < 380) return 0.46;
+  if (width < 480) return 0.5;
+  if (width < 640) return 0.58;
+  if (width < 768) return 0.7;
+  if (width < 1024) return 0.85;
   return 1;
 }
 
@@ -70,7 +71,7 @@ export default function CardFanCarousel({ cards }) {
         return;
       }
       const position = positionFor(count, slot);
-      const target = { x: position.x * 16 * scale, y: position.y * 16, rotation: position.rotation, scale: position.scale, opacity: 1, zIndex: position.zIndex, pointerEvents: "auto" };
+      const target = { x: position.x * 16 * scale, y: position.y * 16 * scale, rotation: position.rotation, scale: position.scale, opacity: 1, zIndex: position.zIndex, pointerEvents: "auto" };
       if (firstMount) {
         gsap.set(element, { x: 0, y: 180, rotation: 0, scale: 0.55, opacity: 0 });
         gsap.to(element, { ...target, delay: 0.12 + slot * 0.05, duration: 0.8, ease: "back.out(1.35)", onComplete: finish });
