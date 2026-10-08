@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import "./ScrollProgress.css";
 
-/**
- * Linha fina no topo da viewport que preenche conforme o usuário
- * rola a página — comum em sites de portfólio/agência premium.
- */
 export default function ScrollProgress() {
   const [progress, setProgress] = useState(0);
 

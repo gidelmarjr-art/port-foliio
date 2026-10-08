@@ -3,12 +3,6 @@ import "./CustomCursor.css";
 
 const INTERACTIVE_SELECTOR = "a, button, [role='button'], input, .cursor-hover";
 
-/**
- * Cursor customizado: um pequeno ponto que segue o mouse com um anel
- * "magnético" mais lento por trás — quando passa sobre um elemento
- * com data-cursor-label, o anel cresce e mostra esse texto (ex.: "VER").
- * Desativado em telas de toque e quando o usuário prefere menos movimento.
- */
 export default function CustomCursor() {
   const dotRef = useRef(null);
   const ringRef = useRef(null);

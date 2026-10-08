@@ -52,7 +52,7 @@ export const projects = [
     name: "Portfólio",
     image: portifolio,
     repo: "https://github.com/gidelmarjr-art/port-foliio",
-    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
+    tags: ["React", "JavaScript", "CSS", "Vercel"],
     description: {
       pt: "Este site: estrutura em React com componentes reutilizáveis, sistema de temas e i18n, e animações inspiradas em blueprints técnicos.",
       en: "This very site: a React structure with reusable components, a theme + i18n system, and animations inspired by technical blueprints.",
@@ -64,7 +64,7 @@ export const projects = [
     name: "Polypla",
     image: polypla,
     repo: "https://github.com/gidelmarjr-art/polyypla-as",
-    tags: ["React", "JavaScript", "CSS", "Vercel"], // ✅ Removido o "React" duplicado
+    tags: ["React", "JavaScript", "CSS", "Vercel"],
     description: {
       pt: "Aplicação web de gerenciamento de tarefas e projetos com suporte a quadros interativos, organização de fluxo de trabalho e controle de status em tempo real.",
       en: "Task and project management web app with interactive boards, workflow organization and real-time status tracking.",
