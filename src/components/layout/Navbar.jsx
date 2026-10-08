@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Menu, X } from "lucide-react";
 import { useLang } from "../../context/LangContext";
 import { useTheme } from "../../context/ThemeContext";
 import MenuOverlay from "./MenuOverlay";
@@ -61,9 +61,8 @@ export default function Navbar() {
               aria-expanded={menuOpen}
               aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             >
-              <span className="menu-btn__bars">
-                <span />
-                <span />
+              <span className="menu-btn__icon">
+                {menuOpen ? <X size={16} /> : <Menu size={16} />}
               </span>
               <span className="menu-btn__label">{menuOpen ? "Fechar" : "Menu"}</span>
             </button>
