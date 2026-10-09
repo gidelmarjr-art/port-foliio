@@ -1,6 +1,6 @@
-import { useLang } from "../../context/LangContext";
-import { useScrollReveal } from "../../hooks/useScrollReveal";
-import { skillCategories } from "../../data/skills";
+import { useLang } from "../../../context/LangContext";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
+import { skillCategories } from "../../../data/skills";
 import "./Skills.css";
 
 function SkillRow({ category, index }) {

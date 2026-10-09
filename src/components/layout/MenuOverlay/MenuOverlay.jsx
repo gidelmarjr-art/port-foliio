@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useLang } from "../../context/LangContext";
-import { sections, social } from "../../data/site";
+import { useLang } from "../../../context/LangContext";
+import { sections, social } from "../../../data/site";
 import "./MenuOverlay.css";
 
 export default function MenuOverlay({ open, onClose }) {

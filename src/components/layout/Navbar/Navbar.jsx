@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Sun, Moon, Menu, X } from "lucide-react";
-import { useLang } from "../../context/LangContext";
-import { useTheme } from "../../context/ThemeContext";
-import MenuOverlay from "./MenuOverlay";
+import { useLang } from "../../../context/LangContext";
+import { useTheme } from "../../../context/ThemeContext";
+import MenuOverlay from "../MenuOverlay/MenuOverlay";
 import "./Navbar.css";
 
 export default function Navbar() {

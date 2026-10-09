@@ -1,7 +1,7 @@
 import { ArrowUpRight, ArrowDown } from "lucide-react";
-import { useLang } from "../../context/LangContext";
-import Marquee from "../ui/Marquee";
-import AnimatedBackdrop from "./AnimatedBackdrop";
+import { useLang } from "../../../context/LangContext";
+import Marquee from "../../ui/Marquee";
+import AnimatedBackdrop from "../AnimatedBackdrop/AnimatedBackdrop";
 import "./Hero.css";
 
 export default function Hero() {

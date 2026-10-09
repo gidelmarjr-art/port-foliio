@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
-import { useLang } from "../../context/LangContext";
-import { useScrollReveal } from "../../hooks/useScrollReveal";
-import { social } from "../../data/site";
-import personPhoto from "../../assets/img/person.jpeg";
+import { useLang } from "../../../context/LangContext";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
+import { social } from "../../../data/site";
+import personPhoto from "../../../assets/img/person.jpeg";
 import "./About.css";
 
 export default function About() {

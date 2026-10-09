@@ -1,7 +1,7 @@
-import { useLang } from "../../context/LangContext";
-import { useScrollReveal } from "../../hooks/useScrollReveal";
-import { projects } from "../../data/projects";
-import CardFanCarousel from "./CardFanCarousel";
+import { useLang } from "../../../context/LangContext";
+import CardFanCarousel from "../CardFanCarousel/CardFanCarousel";
+import { projects } from "../../../data/projects";
+
 import "./Projects.css";
 
 export default function Projects() {

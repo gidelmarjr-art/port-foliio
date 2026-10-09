@@ -1,5 +1,5 @@
-import { useLang } from "../../context/LangContext";
-import { social } from "../../data/site";
+import { useLang } from "../../../context/LangContext";
+import { social } from "../../../data/site";
 import "./Footer.css";
 
 export default function Footer() {

@@ -1,8 +1,8 @@
 import { ArrowUpRight, Mail } from "lucide-react";
-import { useLang } from "../../context/LangContext";
-import { useScrollReveal } from "../../hooks/useScrollReveal";
-import { social } from "../../data/site";
-import Marquee from "../ui/Marquee";
+import { useLang } from "../../../context/LangContext";
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
+import { social } from "../../../data/site";
+import Marquee from "../../ui/Marquee";
 import "./Contact.css";
 
 function GithubIcon(props) {
