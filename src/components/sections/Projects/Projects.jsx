@@ -1,5 +1,5 @@
 import { useLang } from "../../../context/LangContext";
-import { useScrollReveal } from "../../../hooks/useScrollReveal"; // <-- ADICIONE ESTA LINHA
+import { useScrollReveal } from "../../../hooks/useScrollReveal";
 import CardFanCarousel from "../CardFanCarousel/CardFanCarousel";
 import { projects } from "../../../data/projects";
 
