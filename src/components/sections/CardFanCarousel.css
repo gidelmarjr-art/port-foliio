@@ -139,7 +139,7 @@
   }
 
   .fan-carousel__card {
-  top: 10%;
+  top: 30%;
   width: clamp(220px, 40vw, 620px);
 }
 
