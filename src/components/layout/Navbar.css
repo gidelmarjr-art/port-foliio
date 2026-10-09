@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 120;
   padding-top: 22px;
   transition: padding-top var(--dur-fast) var(--ease-out);
 }

@@ -9,13 +9,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 var(--edge);
-  clip-path: circle(2% at calc(100% - 44px) 44px);
-  transition: clip-path 0.7s var(--ease-in-out);
+  clip-path: circle(0% at calc(100% - 44px) 44px);
+  visibility: hidden;
+  transition: clip-path 0.7s var(--ease-in-out), visibility 0s linear 0.7s;
   pointer-events: none;
 }
 
 .menu-overlay.is-open {
   clip-path: circle(150% at calc(100% - 44px) 44px);
+  visibility: visible;
+  transition: clip-path 0.7s var(--ease-in-out), visibility 0s linear 0s;
   pointer-events: auto;
 }
 
