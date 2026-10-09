@@ -13,7 +13,7 @@
 
 .fan-carousel__card {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   width: clamp(190px, 40vw, 620px);
   aspect-ratio: 16 / 10;
@@ -137,6 +137,10 @@
   .fan-carousel__stage {
     height: 240px;
   }
+
+  .fan-carousel__card {
+  top: 20%;
+}
 
   .fan-carousel__card span {
     right: 10px;
