@@ -1,10 +1,5 @@
 import { useEffect, useState } from "react";
 
-/**
- * Observa um conjunto de seções pelo id e retorna qual delas está
- * atualmente em foco na viewport — usado pelo menu e pelo índice
- * fixo de "folha" (sheet index HUD).
- */
 export function useActiveSection(sectionIds) {
   const [active, setActive] = useState(sectionIds[0]);
 
