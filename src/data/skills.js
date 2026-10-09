@@ -1,6 +1,3 @@
-// Ícones via lucide-react + cor de marca de cada tecnologia.
-// A categoria é a chave usada em src/i18n/translations.js -> skills.categories
-
 export const skillCategories = [
   {
     key: "frontend",
