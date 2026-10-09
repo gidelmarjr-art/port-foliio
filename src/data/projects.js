@@ -15,7 +15,7 @@ export const projects = [
     id: "financeday",
     name: "FinanceDay",
     image: financeday,
-    repo: "https://github.com/gidelmarjr-art",
+    repo: "https://github.com/gidelmarjr-art/financeday",
     tags: ["React", "Vite", "CSS", "Frankfurter API", "Vercel"],
     description: {
       pt: "Painel de câmbio global em tempo real com leitura analítica por IA — projeto construído com uma landing page de marketing e um dashboard funcional.",
@@ -99,7 +99,7 @@ export const projects = [
     id: "nutricionista",
     name: "Ana Giedry - Nutricionista",
     image: nutricionista,
-    repo: "https://github.com/gidelmarjr-art",
+    repo: "https://github.com/gidelmarjr-art/anagiedry-port",
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Página web para atendimento nutricional individualizado, guiado por ciência e pela sua rotina real através de uma nutricionista formada em ensino superior.",
