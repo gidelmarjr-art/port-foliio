@@ -9,6 +9,7 @@ import draraquel from "../assets/img/draraquel.png";
 import gbrazcontabilidade from "../assets/img/gbrazcontabilidade.png";
 import yummy from "../assets/img/yummy.png";
 import minhasFinancias from "../assets/img/minhas-financias.png";
+import docurasdahavsfinancias from "../assets/img/docurasdahavsfinancias.png";
 
 export const projects = [
   {
@@ -143,4 +144,15 @@ export const projects = [
     },
   },
 
+  {
+    id: "docurasdahavs-financias",
+    name: "Docuras da Hav's - Finanças",
+    image: docurasdahavsfinancias,
+    repo: "https://github.com/gidelmarjr-art/docuras-da-havs-financias",
+    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
+    description: {
+      pt: "Painel de controle financeiro empresarial para visualização de gastos e receitas, desenvolvido com tecnologias modernas.",
+      en: "Enterprise financial control panel for viewing expenses and revenues, developed with modern technologies."
+    },
+  },
 ];
