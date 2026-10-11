@@ -5,11 +5,7 @@
   right: 0;
   z-index: 120;
   padding-top: 22px;
-  transition: padding-top var(--dur-fast) var(--ease-out);
-}
-
-.navbar-wrap.is-scrolled {
-  padding-top: 14px;
+  transition: padding-top 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navbar {
@@ -17,16 +13,32 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  background-color: rgba(11, 15, 25, 0.8);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  /* Estado inicial no topo: sem fundo, sem borda e sem formato de pílula */
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Estado ao descer a página: ganha o visual de pílula com vidro fosco */
+.navbar-wrap.is-scrolled {
+  padding-top: 14px;
+}
+
+.navbar-wrap.is-scrolled .navbar {
+  background-color: rgba(11, 15, 25, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px 24px;
   border-radius: 100px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  max-width: 1200px;
-  margin: 0 auto;
-  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
 }
 
 .navbar__logo {
@@ -128,7 +140,11 @@
     padding-right: 16px;
   }
 
-  .navbar {
+  .navbar-wrap.is-scrolled {
+    padding-top: 12px;
+  }
+
+  .navbar-wrap.is-scrolled .navbar {
     padding: 10px 16px;
     border-radius: 24px;
   }
