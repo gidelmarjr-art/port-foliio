@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`navbar-wrap ${scrolled ? "is-scrolled" : ""}`}>
+      <header className={`navbar-wrap ${scrolled ? "is-scrolled" : ""} theme-${theme}`}>
         <div className="navbar container">
           <a href="#inicio" className="navbar__logo" aria-label="Gidelmar Júnior">
             G<span>.</span>JR
