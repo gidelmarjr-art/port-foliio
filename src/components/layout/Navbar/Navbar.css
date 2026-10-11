@@ -5,16 +5,7 @@
   right: 0;
   z-index: 120;
   padding-top: 22px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-15px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.navbar-wrap.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  transition: padding-top var(--dur-fast) var(--ease-out);
 }
 
 .navbar-wrap.is-scrolled {
