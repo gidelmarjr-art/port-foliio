@@ -16,7 +16,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  /* Estado inicial no topo: sem fundo, sem borda e sem formato de pílula */
+  /* Estado inicial no topo: totalmente transparente */
   background-color: transparent;
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -26,19 +26,27 @@
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Estado ao descer a página: ganha o visual de pílula com vidro fosco */
+/* Estado ao descer a página: ganha o visual de pílula adaptável ao tema */
 .navbar-wrap.is-scrolled {
   padding-top: 14px;
 }
 
+/* Tema Escuro (Dark) com scroll */
 .navbar-wrap.is-scrolled .navbar {
   background-color: rgba(11, 15, 25, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 12px 24px;
   border-radius: 100px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Adaptativo para Tema Claro (Light) com scroll */
+.navbar-wrap.theme-light.is-scrolled .navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar__logo {
@@ -133,6 +141,7 @@
   line-height: 0;
 }
 
+/* Responsividade Otimizada */
 @media (max-width: 768px) {
   .navbar-wrap {
     padding-top: 12px;
