@@ -155,4 +155,15 @@ export const projects = [
       en: "Enterprise financial control panel for viewing expenses and revenues, developed with modern technologies."
     },
   },
+  {
+    id: "aurenir-psicologa",
+    name: "Aurenir Psicóloga",
+    image: aurenirpsicologa,
+    repo: "https://github.com/gidelmarjr-art/aurenir-psicologa",
+    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel", "Supabase", "PostgreSQL"],
+    description: {
+      pt: "Landing page profissional desenvolvida para serviços de psicologia, unindo competência técnica e escuta humana.",
+      en: "Professional landing page developed for psychology services, combining technical competence and human listening."
+    },
+  },
 ];
