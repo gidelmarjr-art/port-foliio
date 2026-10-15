@@ -158,7 +158,7 @@ export const projects = [
   },
   {
     id: "aurenir-psicologa",
-    name: "Aurenir Psicóloga",
+    name: "Aurenir Terto - Psicóloga",
     image: aurenirpsicologa,
     repo: "https://github.com/gidelmarjr-art/aurenir-psicologa",
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel", "Supabase", "PostgreSQL"],
