@@ -40,6 +40,7 @@
   width: 100%;
   height: 420px;
   object-fit: cover;
+  object-position: center 19%; /* Adicionado para reposicionar o enquadramento do rosto */
   filter: grayscale(0.4) contrast(1.05);
 }
 
@@ -82,6 +83,8 @@
 
   .about__image-wrap img {
     height: 320px;
+    object-position: center 10%;
+    object-fit: cover;
   }
 }
 
