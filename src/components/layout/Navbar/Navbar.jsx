@@ -26,6 +26,14 @@ export default function Navbar() {
             G<span>.</span>JR
           </a>
 
+          {/* Links de navegação para telas maiores (Desktop) */}
+          <nav className="navbar__nav">
+            <a href="#sobre" className="navbar__link">Sobre</a>
+            <a href="#projetos" className="navbar__link">Projetos</a>
+            <a href="#skills" className="navbar__link">Skills</a>
+            <a href="#contato" className="navbar__link">Contato</a>
+          </nav>
+
           <div className="navbar__actions">
             <div className="lang-toggle" role="group" aria-label="Idioma">
               <button
@@ -54,6 +62,7 @@ export default function Navbar() {
               {theme === "dark" ? <Moon size={16} /> : <Sun size={16} />}
             </button>
 
+            {/* Botão de menu visível apenas em telas menores */}
             <button
               type="button"
               className={`menu-btn ${menuOpen ? "is-open" : ""}`}
