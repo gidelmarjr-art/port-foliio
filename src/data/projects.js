@@ -10,6 +10,7 @@ import gbrazcontabilidade from "../assets/img/gbrazcontabilidade.png";
 import yummy from "../assets/img/yummy.png";
 import minhasFinancias from "../assets/img/minhas-financias.png";
 import docurasdahavsfinancias from "../assets/img/docurasdahavsfinancias.png";
+import aurenirpsicologa from "../assets/img/aurenirpsicologa.png";
 
 export const projects = [
   {
