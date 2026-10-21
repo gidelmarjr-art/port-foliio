@@ -14,6 +14,17 @@ import aurenirpsicologa from "../assets/img/aurenirpsicologa.png";
 
 export const projects = [
   {
+    id: "portifolio",
+    name: "Portfólio",
+    image: portifolio,
+    repo: "https://github.com/gidelmarjr-art/port-foliio",
+    tags: ["React", "JavaScript", "CSS", "Vercel"],
+    description: {
+      pt: "Este site: estrutura em React com componentes reutilizáveis, sistema de temas e i18n, e animações inspiradas em blueprints técnicos.",
+      en: "This very site: a React structure with reusable components, a theme + i18n system, and animations inspired by technical blueprints.",
+    },
+  },
+  {
     id: "financeday",
     name: "FinanceDay",
     image: financeday,
@@ -21,7 +32,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "Frankfurter API", "Vercel"],
     description: {
       pt: "Painel de câmbio global em tempo real com leitura analítica por IA — projeto construído com uma landing page de marketing e um dashboard funcional.",
-      en: "Real-time global exchange rate dashboard with an AI analytics layer — built with a marketing landing page plus a functional dashboard."
+      en: "Real-time global exchange rate dashboard with an AI analytics layer — built with a marketing landing page plus a functional dashboard.",
     },
   },
 
@@ -33,7 +44,7 @@ export const projects = [
     tags: ["React", "Python", "CSS", "JavaScript", "Vercel", "MySQL", "Render"],
     description: {
       pt: "Aplicação Web para restaurante, com landing page profissional desenvolvida para serviços como pedidos online, unindo competência técnica e escuta humana.",
-      en: "Web application for restaurants, with a professional landing page developed for services such as online ordering, combining technical competence and human listening."
+      en: "Web application for restaurants, with a professional landing page developed for services such as online ordering, combining technical competence and human listening.",
     },
   },
 
@@ -46,18 +57,6 @@ export const projects = [
     description: {
       pt: "Plataforma online desenvolvida para facilitar a inscrição e gestão de competições de programação para estudantes de TI.",
       en: "Online platform built to streamline registration and management of programming competitions for IT students.",
-    },
-  },
-
-  {
-    id: "portifolio",
-    name: "Portfólio",
-    image: portifolio,
-    repo: "https://github.com/gidelmarjr-art/port-foliio",
-    tags: ["React", "JavaScript", "CSS", "Vercel"],
-    description: {
-      pt: "Este site: estrutura em React com componentes reutilizáveis, sistema de temas e i18n, e animações inspiradas em blueprints técnicos.",
-      en: "This very site: a React structure with reusable components, a theme + i18n system, and animations inspired by technical blueprints.",
     },
   },
 
@@ -78,11 +77,19 @@ export const projects = [
     name: "Minhas Finanças",
     image: minhasFinancias,
     repo: "https://github.com/gidelmarjr-art/minhas-financias",
-    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel", "Supabase", "PostgreSQL"],
+    tags: [
+      "React",
+      "Vite",
+      "CSS",
+      "JavaScript",
+      "Vercel",
+      "Supabase",
+      "PostgreSQL",
+    ],
     description: {
       pt: "Painel de controle financeiro pessoal com visualização de gastos e receitas, desenvolvido com tecnologias modernas.",
-      en: "Personal financial dashboard with expense and income visualization, built with modern technologies."
-    }
+      en: "Personal financial dashboard with expense and income visualization, built with modern technologies.",
+    },
   },
 
   {
@@ -93,7 +100,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Ateliê artesanal de bolos e doces personalizados, onde cada encomenda é desenhada, esculpida e decorada à mão para transformar datas especiais em memórias afetivas.",
-      en: "Handcrafted cake and cookie boutique, where each order is designed, sculpted and decorated by hand to turn special dates into affectionate memories."
+      en: "Handcrafted cake and cookie boutique, where each order is designed, sculpted and decorated by hand to turn special dates into affectionate memories.",
     },
   },
 
@@ -117,7 +124,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Landing page profissional desenvolvida para serviços de medicina de família e cuidados paliativos domiciliares, unindo competência técnica e escuta humana.",
-      en: "Professional landing page developed for family medicine and home palliative care services, combining technical competence and human listening."
+      en: "Professional landing page developed for family medicine and home palliative care services, combining technical competence and human listening.",
     },
   },
 
@@ -141,7 +148,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Landing page profissional desenvolvida para serviços contábeis para diversas áreas, unindo competência técnica e escuta humana.",
-      en: "Professional landing page developed for various accounting services, combining technical competence and human listening."
+      en: "Professional landing page developed for various accounting services, combining technical competence and human listening.",
     },
   },
 
@@ -153,7 +160,7 @@ export const projects = [
     tags: ["React", "Vite", "CSS", "JavaScript", "Vercel"],
     description: {
       pt: "Painel de controle financeiro empresarial para visualização de gastos e receitas, desenvolvido com tecnologias modernas.",
-      en: "Enterprise financial control panel for viewing expenses and revenues, developed with modern technologies."
+      en: "Enterprise financial control panel for viewing expenses and revenues, developed with modern technologies.",
     },
   },
   {
@@ -161,10 +168,18 @@ export const projects = [
     name: "Aurenir Terto - Psicóloga",
     image: aurenirpsicologa,
     repo: "https://github.com/gidelmarjr-art/aurenir-psicologa",
-    tags: ["React", "Vite", "CSS", "JavaScript", "Vercel", "Supabase", "PostgreSQL"],
+    tags: [
+      "React",
+      "Vite",
+      "CSS",
+      "JavaScript",
+      "Vercel",
+      "Supabase",
+      "PostgreSQL",
+    ],
     description: {
       pt: "Landing page profissional desenvolvida para serviços de psicologia, unindo competência técnica e escuta humana.",
-      en: "Professional landing page developed for psychology services, combining technical competence and human listening."
+      en: "Professional landing page developed for psychology services, combining technical competence and human listening.",
     },
   },
 ];
