@@ -11,6 +11,7 @@ import yummy from "../assets/img/yummy.png";
 import minhasFinancias from "../assets/img/minhas-financias.png";
 import docurasdahavsfinancias from "../assets/img/docurasdahavsfinancias.png";
 import aurenirpsicologa from "../assets/img/aurenirpsicologa.png";
+import coffeebook from "../assets/img/coffeebook.png";
 
 export const projects = [
   {
