@@ -182,4 +182,15 @@ export const projects = [
       en: "Professional landing page developed for psychology services, combining technical competence and human listening.",
     },
   },
+  {
+    id: "coffeebook",
+    name: "CoffeeBook",
+    image: coffeebook,
+    repo: "https://github.com/gidelmarjr-art/coffeebook",
+    tags: ["React", "JavaScript", "CSS", "Vercel"],
+    description: {
+      pt: "Uma aplicação web moderna desenvolvida para amantes de café e leitura, permitindo explorar harmonizações entre cafés especiais e livros.",
+      en: "A modern web application developed for coffee and reading enthusiasts, allowing them to explore harmonies between speciality coffees and books.",
+    },
+  },
 ];
