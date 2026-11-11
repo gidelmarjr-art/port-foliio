@@ -69,6 +69,9 @@ export const translations = {
       titleB: "Projetos",
       repoLabel: "Ver repositório",
       viewLabel: "Ver",
+      prev: "Projeto anterior",
+      next: "Próximo projeto",
+      carouselLabel: "Projetos em destaque",
     },
     contact: {
       eyebrow: "Vamos trabalhar juntos",
@@ -154,6 +157,9 @@ export const translations = {
       titleB: "Projects",
       repoLabel: "View repository",
       viewLabel: "View",
+      prev: "Previous project",
+      next: "Next project",
+      carouselLabel: "Featured projects",
     },
     contact: {
       eyebrow: "Let's work together",
