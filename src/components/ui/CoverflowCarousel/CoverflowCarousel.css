@@ -1,0 +1,215 @@
+.cf {
+  width: 100%;
+  min-width: 0;
+}
+
+.cf__frame {
+  position: relative;
+  overflow: hidden;
+  /* respiro vertical para as sombras não serem cortadas */
+  padding: 40px 0;
+  outline: none;
+  cursor: grab;
+  /* o arrasto horizontal é do carrossel; a página mantém a rolagem vertical */
+  touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+
+.cf__frame:active {
+  cursor: grabbing;
+}
+
+.cf__frame:focus-visible {
+  outline: 2px solid var(--flare);
+  outline-offset: -2px;
+  border-radius: var(--radius-md);
+}
+
+.cf__plane {
+  position: relative;
+  transform-style: preserve-3d;
+  user-select: none;
+}
+
+.cf__card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--cf-card);
+  transform: translateX(-50%);
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  background: var(--ink-2);
+  box-shadow: 0 26px 48px -22px var(--shadow);
+  color: var(--paper);
+  will-change: transform, opacity;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-med) var(--ease-out);
+}
+
+.cf__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  transition: transform 0.6s var(--ease-out), filter var(--dur-fast) var(--ease-out);
+}
+
+.cf__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(transparent 42%, rgba(0, 0, 0, 0.8));
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+.cf__card-label {
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  left: 16px;
+  z-index: 1;
+  overflow: hidden;
+  padding-right: 34px;
+  font-family: var(--font-display);
+  font-size: clamp(13px, 1.8vw, 18px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* setinha: só no card central, indicando que ele é clicável */
+.cf__card-label::after {
+  content: "↗";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--flare);
+  color: #0a0a0b;
+  font-size: 13px;
+  opacity: 0;
+  transform: translateY(-50%) scale(0.7);
+  transition: opacity var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+
+.cf__card.is-active {
+  border-color: var(--flare);
+  box-shadow: 0 34px 64px -20px var(--shadow), 0 0 0 1px var(--flare-dim);
+}
+
+.cf__card.is-active .cf__card-label::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+.cf__card:hover img {
+  transform: scale(1.06);
+  filter: brightness(1.05);
+}
+
+.cf__card.is-active:hover::after {
+  background: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.9));
+}
+
+/* ---------------------------------------------------------------- */
+/* Controles e legenda                                              */
+/* ---------------------------------------------------------------- */
+.cf__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.cf__controls button {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  transition: background-color var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out);
+}
+
+.cf__controls button:hover {
+  border-color: var(--flare);
+  background: var(--ink-2);
+  transform: translateY(-2px);
+}
+
+.cf__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  min-height: 170px;
+  max-width: 640px;
+  margin: 28px auto 0;
+  padding-inline: 8px;
+  text-align: center;
+  animation: fade-up 0.5s var(--ease-out) both;
+}
+
+.cf__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cf__desc {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.cf__cta {
+  padding: 12px 24px;
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .cf__frame {
+    padding: 28px 0;
+  }
+
+  .cf__card-label {
+    right: 10px;
+    bottom: 9px;
+    left: 10px;
+    padding-right: 26px;
+    font-size: 12px;
+  }
+
+  .cf__card-label::after {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+
+  .cf__caption {
+    min-height: 230px;
+    margin-top: 20px;
+  }
+
+  .cf__desc {
+    font-size: 14px;
+  }
+}
