@@ -1,6 +1,6 @@
 import { useLang } from "../../../context/LangContext";
 import { useScrollReveal } from "../../../hooks/useScrollReveal";
-import CardFanCarousel from "../CardFanCarousel/CardFanCarousel";
+import CoverflowCarousel from "../../ui/CoverflowCarousel/CoverflowCarousel";
 import { projects } from "../../../data/projects";
 
 import "./Projects.css";
@@ -9,10 +9,13 @@ export default function Projects() {
   const { lang, t } = useLang();
   const ref = useScrollReveal();
 
-  const fanCards = projects.map((project) => ({
-    imgUrl: project.image,
-    alt: project.name,
-    linkUrl: project.repo,
+  const slides = projects.map((project) => ({
+    src: project.image,
+    alt: `Prévia do projeto ${project.name}`,
+    title: project.name,
+    href: project.repo,
+    description: project.description[lang],
+    tags: project.tags,
   }));
 
   return (
@@ -24,7 +27,13 @@ export default function Projects() {
         </h2>
 
         <div className="projects__carousel">
-          <CardFanCarousel cards={fanCards} />
+          <CoverflowCarousel
+            slides={slides}
+            ctaLabel={t("projects.repoLabel")}
+            prevLabel={t("projects.prev")}
+            nextLabel={t("projects.next")}
+            label={t("projects.carouselLabel")}
+          />
         </div>
       </div>
     </section>
